@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-sm-9 col-md-10 main" style="margin-top: 50px;">
+        <h3 class="sub-header">Aktuelle Daten</h3>
+        <table>
+            <tr>
+                <td>
+                    <div class=thermomit>
+                        <div class="roomthermo thermo">
+                        </div><div class="thermotxt">Raum <?=number_format($params["roomTemp"],1)?> &deg;C</div>
+                    </div>
+                </td><td>
+                    <div class=thermomit>
+                        <div class="heaterthermo thermo">
+                        </div>
+                        <div class="thermotxt">Kessel <?=number_format($params["HeaterTemp"],1)?> &deg;C</div>
+                    </div>
+                </td><td>
+                    <div class=thermomit>
+                        <div class="circuitthermo thermo">
+                        </div>
+                        <div class="thermotxt">Vorlauf <?=number_format($params["circuitTemp"],1)?> &deg;C</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <div class=thermomit>
+                        <div class="boilerthermo thermo">
+                        </div>
+                        <div class="thermotxt">Speicher <?=number_format($params["BoilerTemp"],1)?> &deg;C</div>
+                    </div>
+                </td><td>
+                    <div class=thermomit>
+                        <div class="solarthermo thermo">
+                        </div>
+                        <div class="thermotxt">Solar <?=number_format($params["solarTemp"],1)?> &deg;C</div>
+                    </div>
+                </td><td>
+                    <div class=thermomit>
+                        <div id="outsidethermo" class="outsidethermo thermo">
+                        </div>
+                        <div class="thermotxt">Außen <?=number_format($params["outsideTemp"],1)?> &deg;C</div>
+                    </div>
+                </td></tr>
+        </table>
+    </div>
+</div>
